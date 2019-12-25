@@ -1,0 +1,22 @@
+server:
+  port: 9201
+  servlet:
+    context-path: '/api'
+spring:
+  application:
+    name: client-demo-hello
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        metadata:
+          management:
+            context-path: '${server.servlet.context-path}/actuator'
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+## 注意，在这个SpringCloud项目中，我们并未配置SpringAdmin Server的地址
+## 也就是说，SpringBoot Admin自动从服务注册中心（这里是Nacos）中获取到了服务的信息

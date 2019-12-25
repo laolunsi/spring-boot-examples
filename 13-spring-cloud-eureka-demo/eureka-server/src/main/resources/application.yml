@@ -1,0 +1,16 @@
+server:
+  port: 8100
+spring:
+  application:
+    name: eureka-server
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      # 这里必须设置defaultZone，否则会出现连接异常：org.apache.http.conn.ConnectTimeoutException: Connect to localhost:8761 timed out
+      # 具体可以参考EurekaClientConfigBean这个类，默认的url是http://localhost:8761/eureka/
+      defaultZone: 'http://127.0.0.1:${server.port}/eureka'
+
+
+

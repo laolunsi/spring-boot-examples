@@ -1,0 +1,9 @@
+server:
+  port: 8102
+spring:
+  application:
+    name: service-consumer
+eureka:
+  client:
+    service-url:
+      defaultZone: 'http://peer1:8100/eureka'

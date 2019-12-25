@@ -1,0 +1,14 @@
+server:
+  port: 8511
+spring:
+  application:
+    name: service-consumer-ribbon
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        instance-id: ${spring.application.name}:${server.port}
+        port: ${server.port}
+        service-name: ${spring.application.name}
+        register: true

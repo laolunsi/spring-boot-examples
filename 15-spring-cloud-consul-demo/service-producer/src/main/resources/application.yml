@@ -1,0 +1,15 @@
+server:
+  port: 8505
+
+spring:
+  application:
+    name: service-producer
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        register: true
+        instance-id: ${spring.application.name}:${server.port}
+        service-name: ${spring.application.name}
+        port: ${server.port}

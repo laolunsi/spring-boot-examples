@@ -1,0 +1,14 @@
+# eureka集群1
+server:
+  port: 8201
+spring:
+  application:
+    name: eureka-server # eureka服务的application.name要相同
+eureka:
+  client:
+    register-with-eureka: true # 将eureka服务器注册为服务
+    fetch-registry: true # 获取注册信息
+    service-url:
+      defaultZone: 'http://peer2:8202/eureka,http://peer3:8203/eureka' # 将注册服务器地址写成另外两个集群的地址，此处用peer2和peer3代理localhost或127.0.0.1
+  instance:
+    hostname: peer1 # 注意hostname不能为空

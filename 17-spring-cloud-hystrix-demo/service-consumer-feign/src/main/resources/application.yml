@@ -1,0 +1,18 @@
+server:
+  port: 8510
+spring:
+  application:
+    name: service-consumer-feign
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        register: true
+        instance-id: ${spring.application.name}:${server.port}
+        service-name: ${spring.application.name}
+        port: ${server.port}
+# 加入这个配置，用于启动feign自带的断路器
+feign:
+  hystrix:
+    enabled: true

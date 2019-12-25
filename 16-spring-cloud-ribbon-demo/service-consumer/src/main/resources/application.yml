@@ -1,0 +1,14 @@
+server:
+  port: 8201
+spring:
+  application:
+    name: service-consumer
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        register: true
+        service-name: ${spring.application.name}
+        instance-id: ${spring.application.name}:${server.port}
+        port: ${server.port}

@@ -1,0 +1,10 @@
+# eureka集群下，服务的配置
+spring:
+  application:
+    name: eureka-client1
+server:
+  port: 8200
+eureka:
+  client:
+    service-url:
+      defaultZone: 'http://peer1:8201/eureka,http://peer2:8202/eureka,http://peer3:8203/eureka'
