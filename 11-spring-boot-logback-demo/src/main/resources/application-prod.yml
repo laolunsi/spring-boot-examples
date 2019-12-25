@@ -1,0 +1,12 @@
+#debug: true # �Ƿ���debugģʽ��debugģʽ�£�springboot������������־�������Լ���д�Ĵ����޹�
+server:
+  port: 8011
+
+logging:
+#  file: logback-demo.log # �������ĿĿ¼��
+#  path: /logdemo
+#  level:
+#    com.example.logbackdemo: debug
+#    #root: warn # root��־��warn�����������Ҫ��debugģʽ����---�Ῠ�ģ�
+  config: 'classpath:logback-spring-dev.xml' # ָ���Զ����Logging�����ļ���ͨ���������
+#  #Location of the logging configuration file. For instance, `classpath:logback.xml` for Logback.

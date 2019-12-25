@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <contextName>logback-spring-demo-dev</contextName>
+    <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+    <property name="pattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg %n"/>
+    <property name="pattern-color" value="%gray(%d{yyyy-MM-dd HH:mm:ss.SSS}) [%thread] %highlight(%-5level) %green(%logger{50}) - %highlight(%msg) %n"/>
+    <property name="LOG_HOME" value="logs"/>
+
+    <!-- 控制台输出 -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${pattern}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 控制台输出-带颜色 -->
+    <appender name="CONSOLE-WITH-COLOR" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${pattern-color}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 文件输出 -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!--滚动策略-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--日志文件输出的文件名%i指定索引-->
+            <!-- LOG_HOME是上面配置的目录， %d是日期，%i是文件的序列号，比如文件大小超过10M后，就会创建i+1日志文件 -->
+            <fileNamePattern>${LOG_HOME}/all.%d.%i.log</fileNamePattern>
+            <!--文件大小10M 超过创建新文件-->
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <!--日志文件保留天数-->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>${pattern}</pattern>
+        </encoder>
+    </appender>
+
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE-WITH-COLOR"/>
+        <appender-ref ref="FILE"/>
+    </root>
+
+    <!-- logger节点可以指定具体包或类的日志配置 -->
+    <!-- name属性为必选，指定要配置的包或类，level和additivity为可选，有缺省值 -->
+    <!-- level表示日志级别，这里配置info级别，表示info及以上级别的日志被输出 -->
+    <!-- additivity表示日志是否传递到上一级，默认为true -->
+    <logger name="com.example.logbackdemo.IndexAction" level="info" additivity="true">
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+
+</configuration>
+

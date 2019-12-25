@@ -1,0 +1,20 @@
+server:
+  port: 8302
+  servlet:
+    session:
+      cookie:
+        name: CLIENT_B_SESSION
+
+security:
+  oauth2:
+    client:
+      clientId: SampleClientId
+      clientSecret: secret
+      access-token-uri: http://localhost:8300/auth/oauth/token
+      userAuthorizationUri: http://localhost:8300/auth/oauth/authorize
+    resource:
+      user-info-uri: http://localhost:8300/auth/user/me
+
+spring:
+  thymeleaf:
+    cache: false

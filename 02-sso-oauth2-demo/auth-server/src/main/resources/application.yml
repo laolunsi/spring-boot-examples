@@ -1,0 +1,4 @@
+server:
+  port: 8300
+  servlet:
+    context-path: '/auth'

@@ -1,0 +1,7 @@
+server:
+  port: 8080
+
+eknown:
+  email: eknown@163.com
+  uri: http://www.eknown.cn
+  title: 'hello, link to ${eknown.uri} or email to ${eknown.email}'

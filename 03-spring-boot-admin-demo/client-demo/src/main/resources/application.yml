@@ -1,0 +1,17 @@
+server:
+  port: 9334
+spring:
+  application:
+    name: client-demo
+  boot:
+    admin:
+      client:
+        url: http://localhost:9333
+        enabled: true
+#        instance:
+#          prefer-ip: true # 如果配置使用ip进行注册，很奇怪的是，这个ip显示的不是通常意义的局域网地址，而是A类地址
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

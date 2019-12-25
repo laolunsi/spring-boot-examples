@@ -1,0 +1,20 @@
+server:
+  port: 8301
+  servlet:
+    session:
+      cookie:
+        name: CLIENT_A_SESSION
+
+security:
+  oauth2:
+    client:
+      client-id: SampleClientId
+      client-secret: secret
+      access-token-uri: http://localhost:8300/auth/oauth/token
+      user-authorization-uri: http://localhost:8300/auth/oauth/authorize
+    resource:
+      user-info-uri: http://localhost:8300/auth/user/me # 从授权服务器获取当前登录用户信息的地址
+
+spring:
+  thymeleaf:
+    cache: false

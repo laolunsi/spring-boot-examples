@@ -1,0 +1,10 @@
+server:
+  port: 9333
+spring:
+  application:
+    name: admin-server
+  boot:
+    admin:
+      client:
+        url: http://localhost:9333 # 将自己也注册到监控平台
+        enabled: true
