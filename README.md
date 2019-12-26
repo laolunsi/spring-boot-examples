@@ -31,13 +31,13 @@
 
 ## SpringCloud
 
-13. Spring-cloud-eureka-demo: [SpringCloud 服务注册与发现之Eureka](http://www.eknown.cn/index.php/SpringCloud/eureka.html)
-14. Spring-cloud-feign-demo: [SpringCloud 服务调用之 Feign](http://www.eknown.cn/index.php/SpringCloud/feign.html)
-15. Spring-cloud-consul-demo: [SpringCloud 服务注册中心之 Consul](http://www.eknown.cn/index.php/SpringCloud/consul.html)
-16. Spring-cloud-ribbon-demo: [SpringCloud 服务调用之 Ribbon](http://www.eknown.cn/index.php/SpringCloud/ribbon.html)
-17. Spring-cloud-hystrix-demo: [SpringCloud 熔断之 Hystrix](http://www.eknown.cn/index.php/SpringCloud/hystrix.html)
-18. Spring-cloud-ali-nacos-demo: [SpringCloud 阿里服务注册中心 Nacos]
-19. Spring-cloud-admin-demo: [SpringCloud 应用健康监控]
+13. Spring-cloud-eureka-demo: [SpringCloud 服务注册与发现之Eureka](http://www.eknown.cn/index.php/springcloud/eureka.html)
+14. Spring-cloud-feign-demo: [SpringCloud 服务调用之 Feign](http://www.eknown.cn/index.php/springcloud/feign.html)
+15. Spring-cloud-consul-demo: [SpringCloud 服务注册中心之 Consul](http://www.eknown.cn/index.php/springcloud/consul.html)
+16. Spring-cloud-ribbon-demo: [SpringCloud 服务调用之 Ribbon](http://www.eknown.cn/index.php/springcloud/ribbon.html)
+17. Spring-cloud-hystrix-demo: [SpringCloud 熔断之 Hystrix](http://www.eknown.cn/index.php/springcloud/hystrix.html)
+18. Spring-cloud-ali-nacos-demo: [SpringCloud 阿里服务注册中心 Nacos](http://www.eknown.cn/index.php/spring-boot/nacos.html)
+19. Spring-cloud-admin-demo: [SpringCloud 应用健康监控](http://www.eknown.cn/index.php/springcloud/admin.html)
 
 未完待续...
 
