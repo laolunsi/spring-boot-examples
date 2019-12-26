@@ -43,12 +43,6 @@
 
 ---
 
-
-
-## Concat And Communication
-
 我的公众号：猿生物语
 
-个人网站：[http://www.eknown.cn](http://www.eknown.cn)
-
-QQ群：535236254 
+![file](http://zfh-public-blog.oss-cn-beijing.aliyuncs.com/image-1577335824761.png)
