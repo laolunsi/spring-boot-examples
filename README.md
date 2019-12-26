@@ -51,4 +51,4 @@
 
 个人网站：[http://www.eknown.cn](http://www.eknown.cn)
 
-QQ群由于不大活跃，暂不开放啦。
+QQ群：535236254 
