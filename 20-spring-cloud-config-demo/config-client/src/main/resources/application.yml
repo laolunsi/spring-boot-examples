@@ -1,0 +1,12 @@
+server:
+  port: 8021
+
+spring:
+  application:
+    name: config-demo
+  ## 注意这里用 spring.config.name 是会导致启动报错
+  cloud:
+    config:
+      profile: dev
+      label: master
+      uri: http://localhost:8888/
