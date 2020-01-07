@@ -47,7 +47,7 @@
 
 添加我的个人微信，备注 **加群** 即可。欢迎大家加入，一起分享学习和开发中遇到的问题！
 
-<img src="http://zfh-public-blog.oss-cn-beijing.aliyuncs.com/image-1578370580062.JPG" alt="file" style="zoom:35%;" />
+![file](http://zfh-public-blog.oss-cn-beijing.aliyuncs.com/image-1578371758406.png)
 
 
 ## 关注公众号
@@ -57,5 +57,7 @@
 
 如果大家想要实时关注我的文章和分享动态的话，可以关注一下！
 
-<img src="http://zfh-public-blog.oss-cn-beijing.aliyuncs.com/image-1578370565551.JPG" alt="file" style="zoom:50%;" />
+![file](http://zfh-public-blog.oss-cn-beijing.aliyuncs.com/image-1578371742220.png)
+
+
 
