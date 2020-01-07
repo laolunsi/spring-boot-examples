@@ -43,7 +43,19 @@
 
 ---
 
-我的公众号：猿生物语
+## 加入微信群
+
+添加我的个人微信，备注 **加群** 即可。欢迎大家加入，一起分享学习和开发中遇到的问题！
+
+<img src="http://zfh-public-blog.oss-cn-beijing.aliyuncs.com/image-1578370580062.JPG" alt="file" style="zoom:35%;" />
 
 
-![](http://zfh-public-blog.oss-cn-beijing.aliyuncs.com/image-1577335824761.png)
+## 关注公众号
+
+关注公众号：猿生物语。每周分享**干货**技术文章。
+可免费获取云盘学习资料。
+
+如果大家想要实时关注我的文章和分享动态的话，可以关注一下！
+
+<img src="http://zfh-public-blog.oss-cn-beijing.aliyuncs.com/image-1578370565551.JPG" alt="file" style="zoom:50%;" />
+
