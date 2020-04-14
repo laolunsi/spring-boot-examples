@@ -1,0 +1,22 @@
+server:
+  port: 8887
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/laolunsi/config-center-example # 仓库地址
+          search-paths: demo # 目录
+          #username: '' # 用户名
+          #password: '' # 密码
+    # consul-config
+    consul:
+      host: localhost
+      port: 8500 # consul默认端口
+      discovery:
+        register: true
+        instance-id: ${spring.application.name}:${server.port}
+        service-name: ${spring.application.name}
+        port: ${server.port}

@@ -1,0 +1,22 @@
+server:
+  port: 8022
+spring:
+  application:
+    name: config-demo
+  cloud:
+    config:
+      #uri: http://localhost:8887 # 使用注册中心来获取数据时，开启服务注册，然后不需要指定 config.uri 了
+      label: master
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: config-server
+    # consul-config
+    consul:
+      host: localhost
+      port: 8500 # consul默认端口
+      discovery:
+        register: true
+        instance-id: ${spring.application.name}:${server.port}
+        service-name: ${spring.application.name}
+        port: ${server.port}

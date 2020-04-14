@@ -1,0 +1,13 @@
+#server:
+#  port: 8021
+#spring:
+#  application:
+#    name: config-demo
+ # cloud:
+    #config:
+      #uri: http://localhost:8887
+      #label: master
+      #profile: dev
+#    nacos:
+#      discovery:
+#        server-addr: localhost:8848
