@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: consumer-demo
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        server-addr: 127.0.0.1:8848
+        prefix: ${spring.application.name} # 默认值就是 spring.application.name
+      discovery:
+        server-addr: 127.0.0.1:8848
+  profiles:
+    active: dev
+
+# 查找的配置文件应该是：${prefix}-${active}.${file-extension}
+# 如果 ${active} 不存在，那么会查找： ${prefix}.${file-extension}

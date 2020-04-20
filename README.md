@@ -57,7 +57,7 @@
 
 - [x] spring-cloud-config-demo:[ Spring Cloud 配置中心](https://mp.weixin.qq.com/s/QcIaGAYUvPBIqJM8oMbVvQ)
 
-- [ ] spring-cloud-nacos-config-demo: Spring Cloud Nacos 配置中心
+- [x] spring-cloud-nacos-config-demo: [Spring Cloud Nacos 配置中心](https://mp.weixin.qq.com/s/ESGR3aWgnkgJAw7Oc36xGw)
 
 - [ ] spring-cloud-gateway: Spring Cloud Gateway 
 
