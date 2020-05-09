@@ -1,0 +1,12 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /api
+spring:
+  layering-cache:
+    stats: false # 关闭监控
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 2
+    timeout: 300s

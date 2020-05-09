@@ -1,0 +1,31 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /api
+
+jetcache:
+  statIntervalMinutes: 15
+  areaInCacheName: false
+  local:
+    default:
+      type: caffeine
+      keyConvertor: fastjson
+  remote:
+    default:
+      expireAfterWriteInMillis: 86400000 # 全局，默认超时时间，单位毫秒
+      type: redis
+      keyConvertor: fastjson
+      valueEncoder: 'myJson' #java?useIdentityNumber=false  #java
+      valueDecoder: 'myJson' #java?useIdentityNumber=false
+      poolConfig:
+        minIdle: 5
+        maxIdle: 20
+        maxTotal: 50
+      host: ${redis.host}
+      port: ${redis.port}
+      database: 1
+
+redis:
+  host: 127.0.0.1
+  port: 6379
+
