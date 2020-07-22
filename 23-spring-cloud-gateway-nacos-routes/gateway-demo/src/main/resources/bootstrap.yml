@@ -1,0 +1,31 @@
+server:
+  port: 8501
+
+spring:
+  application:
+    name: gateway-demo
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        group: ${gateway.dynamicRoute.group}
+        file-extension: json
+        server-addr: 127.0.0.1:8848
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+  redis:
+    host: localhost
+    password:
+    port: 6379
+    database: 10
+
+
+gateway:
+  dynamicRoute:
+    enabled:  true
+    dataType: nacos
+    dataId: 'yq_routes'
+    group: 'YQ_GATEWAY'
