@@ -1,4 +1,4 @@
-# SpringCloud 脚手架
+# SpringCloud Gateway + Nacos 实现动态路由示例
 
 ## gateway-demo
 
