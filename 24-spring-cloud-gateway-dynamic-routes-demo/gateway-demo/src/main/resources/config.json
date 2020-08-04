@@ -1,0 +1,50 @@
+[
+  {
+    "id": "demo",
+    "uri": "lb://demo",
+    "predicates": [
+      {
+        "name": "Path",
+        "args": {
+          "pattern": "/api/demo/**"
+        }
+      }
+    ],
+    "filters": [
+      {
+        "name": "StripPrefix",
+        "args": {
+          "parts": "2"
+        }
+      },
+      {
+        "name": "RequestRateLimiter",
+        "args": {
+          "redis-rate-limiter.replenishRate": 10,
+          "redis-rate-limiter.burstCapacity": 20,
+          "key-resolver": "#{@ipKeyResolver}"
+        }
+      }
+    ]
+  },
+  {
+    "id": "web-comment",
+    "uri": "lb://web-comment",
+    "predicates": [
+      {
+        "name": "Path",
+        "args": {
+          "pattern": "/api/web-comment/**"
+        }
+      }
+    ],
+    "filters": [
+      {
+        "name": "StripPrefix",
+        "args": {
+          "parts": "2"
+        }
+      }
+    ]
+  }
+]

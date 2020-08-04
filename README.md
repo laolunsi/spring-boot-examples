@@ -43,29 +43,19 @@
 
 ## SpringCloud
 
-- [x]  spring-cloud-eureka-demo: [Spring Cloud 服务注册与发现之 Eureka](http://www.eknown.cn/index.php/springcloud/eureka.html)
-
+- [x] spring-cloud-eureka-demo: [Spring Cloud 服务注册与发现之 Eureka](http://www.eknown.cn/index.php/springcloud/eureka.html)
 - [x] spring-cloud-feign-demo: [Spring Cloud 服务调用之 Feign](http://www.eknown.cn/index.php/springcloud/feign.html)
-
 - [x] spring-cloud-consul-demo: [Spring Cloud 服务注册中心之 Consul](http://www.eknown.cn/index.php/springcloud/consul.html)
-
 - [x] spring-cloud-ribbon-demo: [Spring Cloud 服务调用之 Ribbon](http://www.eknown.cn/index.php/springcloud/ribbon.html)
-
 - [x] spring-cloud-hystrix-demo: [Spring Cloud 熔断之 Hystrix](http://www.eknown.cn/index.php/springcloud/hystrix.html)
-
 - [x] spring-cloud-ali-nacos-demo: [Spring Cloud 阿里服务注册中心 Nacos](https://mp.weixin.qq.com/s/XUt2GZbXHk9Mkg9in99ERQ)
-
 - [x] spring-cloud-admin-demo: [Spring Cloud 应用健康监控](https://mp.weixin.qq.com/s/pInf-K-KaQAOxLM5sINQOw)
-
 - [x] spring-cloud-config-demo:[ Spring Cloud 配置中心](https://mp.weixin.qq.com/s/QcIaGAYUvPBIqJM8oMbVvQ)
-
 - [x] spring-cloud-nacos-config-demo: [Spring Cloud Nacos 配置中心](https://mp.weixin.qq.com/s/ESGR3aWgnkgJAw7Oc36xGw)
-
 - [ ] spring-cloud-gateway: Spring Cloud Gateway 
-
 - [ ] spring-cloud-template: Spring Cloud 模板项目
-
 - [x] spring-cloud-gateway-nacos-routes: [SpringCloud Gateway + Nacos 实现动态路由](https://mp.weixin.qq.com/s/B3sas24dVk0DSgeqDPBAng)
+- [x] spring-cloud-gateway-dynamic-routes: SpringCloud Gateway + Mysql 实现动态路由及路由管理功能
 
 未完待续...
 

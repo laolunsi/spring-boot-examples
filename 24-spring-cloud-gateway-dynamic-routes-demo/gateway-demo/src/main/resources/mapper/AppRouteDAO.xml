@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.gatewaydemo.model.dao.AppRouteDAO">
+    <select id="findRepeat" parameterType="com.example.gatewaydemo.model.beans.AppRoute"
+        resultType="com.example.gatewaydemo.model.beans.AppRoute">
+        SELECT id, routeId, `order`, uri, predicates, filters, updateTime
+        FROM app_route
+        WHERE id != #{id} AND (routeId = #{routeId} or uri = #{uri})
+        LIMIT 1
+    </select>
+
+    <insert id="insert" parameterType="com.example.gatewaydemo.model.beans.AppRoute">
+        <selectKey resultType="java.lang.Integer" keyColumn="id" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        INSERT INTO app_route
+        (routeId, `order`, uri, predicates, filters, updateTime)
+        VALUES
+        (#{routeId}, #{order}, #{uri}, #{predicates}, #{filters}, #{updateTime})
+    </insert>
+
+    <update id="update" parameterType="com.example.gatewaydemo.model.beans.AppRoute">
+        UPDATE app_route
+        <set>
+            routeId = #{routeId},
+            `order` = #{order},
+            uri = #{uri},
+            predicates= #{predicates},
+            filters = #{filters},
+            updateTime = #{updateTime}
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <update id="delete" parameterType="com.example.gatewaydemo.model.beans.AppRoute">
+        UPDATE app_route
+        <set>
+            `delete` = 1,
+            updateTime = #{updateTime}
+        </set>
+        WHERE id = #{id}
+    </update>
+
+</mapper>

@@ -1,0 +1,42 @@
+server:
+  port: 8502
+
+spring:
+  application:
+    name: gateway-demo222
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  #  #    gateway:
+  #      discovery:
+  #        locator:
+  #          enabled: true
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useSSL=false
+    username: root
+    password: root
+
+  redis:
+    host: localhost
+    password:
+    port: 6379
+    database: 10
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+gateway:
+  dynamicRoute:
+    dataId: 'yq_routes'
+    group: 'YQ_GATEWAY'
