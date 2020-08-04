@@ -65,7 +65,7 @@
 
 - [ ] spring-cloud-template: Spring Cloud 模板项目
 
-
+- [x] spring-cloud-gateway-nacos-routes: [SpringCloud Gateway + Nacos 实现动态路由](https://mp.weixin.qq.com/s/B3sas24dVk0DSgeqDPBAng)
 
 未完待续...
 
