@@ -14,30 +14,19 @@
 ## SpringBoot
 
 - [x] spring-boot-ssm-demo: [Spring Boot SSM 简单整合示例](https://mp.weixin.qq.com/s/GO-LDQb4c2LERVpCT8xoVQ)
-
 - [x] spring-boot-admin-demo: [Spring Boot 应用健康监控](https://mp.weixin.qq.com/s/4qCocrB-lhrNGtP1N4w4mQ)
-
 - [x] spring-boot-config-study: [Spring Boot 配置详解](https://mp.weixin.qq.com/s/ctzf1Xo7850yBdBzv9vlmA)
-
 - [x] spring-boot-swagger-demo: [Spring Boot 使用 Swagger 构建 RestAPI 接口文档](https://mp.weixin.qq.com/s/cATpnfphcbb1n8RW4YQXcA)
-
 - [x] spring-boot-exception-demo: [Spring Boot 统一异常处理](https://mp.weixin.qq.com/s/KQGU1FaIvF-v9LmUa_-NGw)
-
 - [x] spring-boot-logback-demo: [Spring Boot 日志处理之 Logback](https://mp.weixin.qq.com/s/Y_P-t_xy-BPtrHgJ0IZKlg)
-
 - [x] spring-boot-redis-demo: [Spring Boot 整合 Redis](https://mp.weixin.qq.com/s/vxW3WNYixdKrHir7dlVzWQ)
-
 - [x] spring-boot-mongo-demo: [Spring Boot 整合 MongoDB](https://mp.weixin.qq.com/s/5BAGDxengmOmT9m6iwq4dQ)
-
 - [x] spring-boot-params-time-demo: [Spring Boot 时间参数处理问题](https://mp.weixin.qq.com/s/nEUIUCuyG1oz9JwJYhM8mA)
-
 - [x] spring-boot-mail-demo: [Spring Boot 邮件发送](https://mp.weixin.qq.com/s/3wNjqD8db_vrn01WYv6ymg)
-
 - [x] spring-boot-application-study: [Spring Boot Application 详解](https://mp.weixin.qq.com/s/AiDvv5wR4Av4yHxFOvLyDQ)
-
 - [x] spring-boot-cache-demo: [Spring Boot 缓存技术实战](https://mp.weixin.qq.com/s/lcZfgOY-TOIcmUqFcBGBEA)
-
 - [x] sso-oauth2-demo: [Spring Boot OAuth2 单点登录示例](https://mp.weixin.qq.com/s/2davYzHuGKRQD1m-Atjs3w)
+- [x] spring-boot-rabbitmq-demo: Spring Boot 整合 RabbitMQ
 
 ---
 
@@ -52,10 +41,10 @@
 - [x] spring-cloud-admin-demo: [Spring Cloud 应用健康监控](https://mp.weixin.qq.com/s/pInf-K-KaQAOxLM5sINQOw)
 - [x] spring-cloud-config-demo:[ Spring Cloud 配置中心](https://mp.weixin.qq.com/s/QcIaGAYUvPBIqJM8oMbVvQ)
 - [x] spring-cloud-nacos-config-demo: [Spring Cloud Nacos 配置中心](https://mp.weixin.qq.com/s/ESGR3aWgnkgJAw7Oc36xGw)
-- [ ] spring-cloud-gateway: Spring Cloud Gateway 
-- [ ] spring-cloud-template: Spring Cloud 模板项目
-- [x] spring-cloud-gateway-nacos-routes: [SpringCloud Gateway + Nacos 实现动态路由](https://mp.weixin.qq.com/s/B3sas24dVk0DSgeqDPBAng)
-- [x] spring-cloud-gateway-dynamic-routes: SpringCloud Gateway + Mysql 实现动态路由及路由管理功能
+- [ ] spring-cloud-gateway: Spring Cloud Gateway
+- [x] spring-cloud-gateway-nacos-routes: [Spring Cloud Gateway + Nacos 实现动态路由](https://mp.weixin.qq.com/s/B3sas24dVk0DSgeqDPBAng)
+- [x] spring-cloud-gateway-dynamic-routes: [Spring Cloud Gateway + Mysql 实现动态路由及路由管理功能](https://mp.weixin.qq.com/s/uHgF7tAj1uSsBxKvLENBUw)
+- [ ] spring-cloud-sentinel-demo: Spring Cloud 流量管理之 Sentinel 详解
 
 未完待续...
 
