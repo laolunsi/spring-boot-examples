@@ -11,7 +11,7 @@
 
 ---
 
-## SpringBoot
+## Spring Boot
 
 - [x] spring-boot-ssm-demo: [Spring Boot SSM 简单整合示例](https://mp.weixin.qq.com/s/GO-LDQb4c2LERVpCT8xoVQ)
 - [x] spring-boot-admin-demo: [Spring Boot 应用健康监控](https://mp.weixin.qq.com/s/4qCocrB-lhrNGtP1N4w4mQ)
@@ -27,10 +27,11 @@
 - [x] spring-boot-cache-demo: [Spring Boot 缓存技术实战](https://mp.weixin.qq.com/s/lcZfgOY-TOIcmUqFcBGBEA)
 - [x] sso-oauth2-demo: [Spring Boot OAuth2 单点登录示例](https://mp.weixin.qq.com/s/2davYzHuGKRQD1m-Atjs3w)
 - [x] spring-boot-rabbitmq-demo: [Spring Boot 整合 RabbitMQ](https://mp.weixin.qq.com/s/UjTWWIc68ncNYR6oxDUcBw)
+- [ ] spring-boot-elasticsearch-demo: Spring Boot 整合 ElasticSearch
 
 ---
 
-## SpringCloud
+## Spring Cloud
 
 - [x] spring-cloud-eureka-demo: [Spring Cloud 服务注册与发现之 Eureka](http://www.eknown.cn/index.php/springcloud/eureka.html)
 - [x] spring-cloud-feign-demo: [Spring Cloud 服务调用之 Feign](http://www.eknown.cn/index.php/springcloud/feign.html)
@@ -50,9 +51,7 @@
 
 ---
 
-## 个人公众号
-
-作者菌有一个小小的公众号，分享 Java 编程技术，以及工作生活中的一些感悟。欢迎加入！
+## 公众号
 
 如果大家想要实时关注我的文章和分享动态的话，可以关注一下！
 

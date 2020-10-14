@@ -1,0 +1,15 @@
+server:
+  port: 8060
+
+spring:
+  elasticsearch:
+    rest:
+      uris: http://localhost:9200
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          elasticsearch:
+            core=DEBUG:
