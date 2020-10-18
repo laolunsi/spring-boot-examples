@@ -27,7 +27,7 @@
 - [x] spring-boot-cache-demo: [Spring Boot 缓存技术实战](https://mp.weixin.qq.com/s/lcZfgOY-TOIcmUqFcBGBEA)
 - [x] sso-oauth2-demo: [Spring Boot OAuth2 单点登录示例](https://mp.weixin.qq.com/s/2davYzHuGKRQD1m-Atjs3w)
 - [x] spring-boot-rabbitmq-demo: [Spring Boot 整合 RabbitMQ](https://mp.weixin.qq.com/s/UjTWWIc68ncNYR6oxDUcBw)
-- [ ] spring-boot-elasticsearch-demo: Spring Boot 整合 ElasticSearch
+- [x] spring-boot-elasticsearch-demo: [Spring Boot 整合 ElasticSearch](https://mp.weixin.qq.com/s/0_2u5v-ALMIGMaplr2AAfQ)
 
 ---
 
