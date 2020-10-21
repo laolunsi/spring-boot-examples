@@ -45,7 +45,7 @@
 - [ ] spring-cloud-gateway: Spring Cloud Gateway
 - [x] spring-cloud-gateway-nacos-routes: [Spring Cloud Gateway + Nacos 实现动态路由](https://mp.weixin.qq.com/s/B3sas24dVk0DSgeqDPBAng)
 - [x] spring-cloud-gateway-dynamic-routes: [Spring Cloud Gateway + Mysql 实现动态路由及路由管理功能](https://mp.weixin.qq.com/s/uHgF7tAj1uSsBxKvLENBUw)
-- [ ] spring-cloud-sentinel-demo: Spring Cloud 流量管理之 Sentinel 详解
+- [ ] spring-cloud-sentinel-demo: [Spring Cloud Alibaba Sentinel 流量管理](https://mp.weixin.qq.com/s/9BvAhUCvsW1GmwLXhB5btQ)
 
 未完待续...
 
