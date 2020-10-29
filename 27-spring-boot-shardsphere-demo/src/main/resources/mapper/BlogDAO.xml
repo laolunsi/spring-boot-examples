@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.shardspheredemo.dao.BlogDAO">
+
+    <insert id="insert" parameterType="com.example.shardspheredemo.bean.Blog">
+        INSERT INTO t_blog
+        (title, content, userId, updateTime)
+        VALUES
+        (#{title}, #{content}, #{userId}, #{updateTime})
+    </insert>
+
+    <update id="update" parameterType="com.example.shardspheredemo.bean.Blog">
+        UPDATE SET
+        title = #{title}, content = #{content}, userId = #{userId}, updateTime = #{updateTime}
+        WHERE id = #{id}
+    </update>
+
+    <select id="find" resultType="com.example.shardspheredemo.bean.Blog">
+        SELECT b.id, b.title, b.content, b.userId, b.updateTime, u.name as userName
+        FROM t_blog b join t_user u ON b.userId = u.userId
+        ORDER BY b.id DESC
+        LIMIT #{currentIndex}, #{limit}
+    </select>
+
+    <select id="count" resultType="java.lang.Integer">
+        SELECT COUNT(*)
+        FROM t_blog
+    </select>
+
+    <select id="findByUserId" resultType="com.example.shardspheredemo.bean.Blog">
+        SELECT b.id, b.title, b.content, b.userId, b.updateTime, u.name as userName
+        FROM t_blog b join t_user u ON b.userId = u.userId
+        WHERE b.userId = #{userId}
+    </select>
+
+    <select id="findById" resultType="com.example.shardspheredemo.bean.Blog">
+        SELECT b.id, b.title, b.content, b.userId, b.updateTime, u.name as userName
+        FROM t_blog b join t_user u ON b.userId = u.userId
+        WHERE b.id = #{id}
+    </select>
+</mapper>

@@ -1,0 +1,86 @@
+# 服务端口
+server:
+  port: 8223
+  servlet:
+    context-path: /api
+
+# 服务名
+spring:
+  # 定义两个全局数据源
+  shardingsphere:
+    datasource:
+      names: ds-0,ds-1
+      ds-0:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/ds-0?useUnicode=true&characterEncoding=utf8&tinyInt1isBit=false&useSSL=false&serverTimezone=GMT
+        username: root
+        password: root
+      # 配置数据源 ds-1
+      ds-1:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/ds-1?useUnicode=true&characterEncoding=utf8&tinyInt1isBit=false&useSSL=false&serverTimezone=GMT
+        username: root
+        password: root
+    sharding:
+      tables:
+        t_user:
+          actual-data-nodes: ds-$->{0..1}.t_user_$->{0..2}
+          ### 分库策略
+          database-strategy:
+            inline:
+              # 分库分片键
+              sharding-column: userId
+              # 分库分片算法
+              algorithm-expression: ds-$->{userId % 2}
+          # 分表策略
+          table-strategy:
+            inline:
+              # 分表分片健
+              sharding-column: userId
+              # 分表算法
+              algorithm-expression: t_user_$->{userId % 3}
+
+          key-generator:
+            # 自增主键字段
+            column: userId
+            # 自增主键ID 生成方案
+            type: SNOWFLAKE
+        t_blog:
+          actual-data-nodes: ds-$->{0..1}.t_blog_$->{0..2}
+          ### 分库策略
+          database-strategy:
+            inline:
+              # 分库分片键
+              sharding-column: userId
+              # 分库分片算法
+              algorithm-expression: ds-$->{userId % 2}
+          # 分表策略
+          table-strategy:
+            inline:
+              # 分表分片健
+              sharding-column: userId
+              # 分表算法
+              algorithm-expression: t_blog_$->{userId % 3}
+
+          key-generator:
+            # 自增主键字段
+            column: id
+            # 自增主键ID 生成方案
+            type: SNOWFLAKE
+
+      # 绑定表关系
+      binding-tables: t_user, t_blog #,t_order_item
+      broadcast-tables: t_config
+    # 是否开启 SQL解析日志
+    props:
+      sql:
+        show: true
+
+  main:
+    allow-bean-definition-overriding: true
+
+# 配置xml 的扫描路径
+mybatis:
+  mapper-locations: classpath:mapper/*.xml

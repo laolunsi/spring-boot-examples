@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.shardspheredemo.dao.UserDAO">
+
+    <insert id="insert" parameterType="com.example.shardspheredemo.bean.User">
+        INSERT INTO t_user
+        (name, password, createTime)
+        VALUES
+        (#{name}, #{password}, #{createTime})
+    </insert>
+
+    <select id="count" resultType="java.lang.Integer">
+        SELECT COUNT(*)
+        FROM t_user
+    </select>
+
+    <select id="find" resultType="com.example.shardspheredemo.bean.User">
+        SELECT userId, name, password, createTime
+        FROM t_user
+        ORDER BY userId DESC
+        LIMIT #{currentIndex}, #{limit}
+    </select>
+</mapper>
