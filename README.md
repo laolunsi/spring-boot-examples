@@ -1,10 +1,10 @@
 # spring-boot-exmaples
 
-:smile: 该仓库为Spring/SpringBoot/SpringCloud系列技术栈，涵盖实战教程 + 源码深入学习，一网打尽！
+:smile: 该仓库为Spring/SpringBoot/SpringCloud系列技术栈
 
 目前还在持续更新中哦！我的公众号：猿生物语，ID: JavaApes, 欢迎大家与我一起学习、进步！
 
-:tipping_hand_man: demo表示实战示例，study表示知识点的深入学习，请注意！
+:tipping_hand_man: demo表示实战示例，study表示知识点的深入学习，请注意！因为工作较忙，可能部分已上传代码的子项目对应的文章还未发布，如有问题可以联系我！
 
 如果您觉得该教程还算有所帮助，还请点个**star**支持一下！
 
@@ -29,6 +29,7 @@
 - [x] spring-boot-rabbitmq-demo: [Spring Boot 整合 RabbitMQ](https://mp.weixin.qq.com/s/UjTWWIc68ncNYR6oxDUcBw)
 - [x] spring-boot-elasticsearch-demo: [Spring Boot 整合 ElasticSearch](https://mp.weixin.qq.com/s/0_2u5v-ALMIGMaplr2AAfQ)
 - [x] spring-boot-shardsphere-demo: Spring Boot + ShardShpere 实现分库分表
+- [x] spring-boot-clickhouse-demo: Spring Boot + ClickHouse
 
 ---
 
