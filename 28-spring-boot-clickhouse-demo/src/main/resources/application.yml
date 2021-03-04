@@ -1,0 +1,17 @@
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+
+    # 注意这里是自定义的配置，通过 JdbcParamConfig 来加载配置到 Spring 中
+    # 然后由 DruidConfig 来配置数据源
+    click:
+      driverClassName: ru.yandex.clickhouse.ClickHouseDriver
+      url: jdbc:clickhouse://127.0.0.1:8123/test # ip:port/database
+      userName: default
+      password: default # 按照自己连接的 clickhouse 数据库来
+      initialSize: 10
+      maxActive: 100
+      minIdle: 10
+      maxWait: 6000
+      validationQuery: SELECT 1

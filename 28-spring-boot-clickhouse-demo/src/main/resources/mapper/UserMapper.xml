@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aegis.analysis.clickhousestorage.dao.UserInfoMapper">
+    <resultMap id="BaseResultMap" type="com.example.clickhousedemo.model.UserInfo">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="name" property="name" />
+        <result column="score" property="score" />
+        <result column="score2" property="score2" />
+        <result column="state" property="state" />
+        <result column="createTime" property="createTime" />
+       <!-- <result column="ranks" property="ranks" jdbcType="JAVA_OBJECT" javaType="java.lang.Object" />-->
+        <result column="ranks" property="ranks" typeHandler="com.example.clickhousedemo.dao.ClickArrayToIntHandler" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        *
+    </sql>
+
+    <insert id="saveData" parameterType="com.aegis.analysis.clickhousestorage.model.UserInfo" >
+        INSERT INTO user
+            (id,name, score, score2, state, createTime, ranks)
+        VALUES
+        (#{id},#{name}, #{score}, #{score2}, #{state}, #{createTime}, #{ranks, jdbcType=ARRAY,
+        typeHandler=com.example.clickhousedemo.dao.ClickArrayToIntHandler})
+    </insert>
+
+    <select id="selectById" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from user
+        where id = #{id}
+        limit 1
+    </select>
+
+    <select id="selectList" resultMap="BaseResultMap" >
+        select
+        <include refid="Base_Column_List" />
+        from user
+    </select>
+</mapper>
