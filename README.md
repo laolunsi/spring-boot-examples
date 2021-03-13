@@ -29,7 +29,7 @@
 - [x] spring-boot-rabbitmq-demo: [Spring Boot 整合 RabbitMQ](https://mp.weixin.qq.com/s/UjTWWIc68ncNYR6oxDUcBw)
 - [x] spring-boot-elasticsearch-demo: [Spring Boot 整合 ElasticSearch](https://mp.weixin.qq.com/s/0_2u5v-ALMIGMaplr2AAfQ)
 - [x] spring-boot-shardsphere-demo: Spring Boot + ShardShpere 实现分库分表
-- [x] spring-boot-clickhouse-demo: Spring Boot + ClickHouse
+- [x] spring-boot-clickhouse-demo: [Spring Boot + ClickHouse](https://mp.weixin.qq.com/s/XQDWkmnXGrina_And9063w)
 
 ---
 
