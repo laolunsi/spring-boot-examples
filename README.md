@@ -8,6 +8,8 @@
 
 如果您觉得该教程还算有所帮助，还请点个**star**支持一下！
 
+📌 升级基线与分批迁移计划请参考：[`docs/version-baseline.md`](docs/version-baseline.md)。
+
 
 ---
 
@@ -25,7 +27,7 @@
 - [x] spring-boot-mail-demo: [Spring Boot 邮件发送](https://mp.weixin.qq.com/s/3wNjqD8db_vrn01WYv6ymg)
 - [x] spring-boot-application-study: [Spring Boot Application 详解](https://mp.weixin.qq.com/s/AiDvv5wR4Av4yHxFOvLyDQ)
 - [x] spring-boot-cache-demo: [Spring Boot 缓存技术实战](https://mp.weixin.qq.com/s/lcZfgOY-TOIcmUqFcBGBEA)
-- [x] sso-oauth2-demo: [Spring Boot OAuth2 单点登录示例](https://mp.weixin.qq.com/s/2davYzHuGKRQD1m-Atjs3w)
+- [x] sso-oauth2-demo: [Spring Boot OAuth2 单点登录示例](https://mp.weixin.qq.com/s/2davYzHuGKRQD1m-Atjs3w)（含旧栈，迁移说明见 `13-sso-oauth2-demo/README.md`）
 - [x] spring-boot-rabbitmq-demo: [Spring Boot 整合 RabbitMQ](https://mp.weixin.qq.com/s/UjTWWIc68ncNYR6oxDUcBw)
 - [x] spring-boot-elasticsearch-demo: [Spring Boot 整合 ElasticSearch](https://mp.weixin.qq.com/s/0_2u5v-ALMIGMaplr2AAfQ)
 - [x] spring-boot-shardsphere-demo: Spring Boot + ShardShpere 实现分库分表
